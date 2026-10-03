@@ -12,10 +12,10 @@ const CONFIG = {
   minSpawnInterval: 85,
   baseBulletSpeed: 220,
   speedIncreasePerLevel: 42,
-  maxBullets: 35,
+  maxBullets: 30,
 
-  lifeItemChance: 0.10,
-  lifeItemInterval: 9000,
+  lifeItemChance: 0.20,
+  lifeItemInterval: 6000,
   lifeItemDuration: 8000
 };
 

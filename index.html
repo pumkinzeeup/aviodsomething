@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>비둘기 피하기</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game-wrap">
+    <header class="hud">
+      <div class="title-slot">
+        <img src="assets/title.png" alt="게임 제목" draggable="false">
+      </div>
+      <div class="stats">
+        <div class="stat">점수 <strong id="score">0</strong></div>
+        <div class="stat life-stat">심장 <span id="lives" class="hearts" aria-label="목숨 3개">
+          <img class="heart" src="assets/heart_full.png" alt="">
+          <img class="heart" src="assets/heart_full.png" alt="">
+          <img class="heart" src="assets/heart_full.png" alt="">
+        </span></div>
+        <div class="stat">레벨 <strong id="level">1</strong></div>
+      </div>
+    </header>
+
+    <section id="game" aria-label="비둘기 피하기 게임">
+      <div id="startScreen" class="overlay">
+        <div class="panel">
+          <h1>'그것'으로부터<br>도망가기</h1>
+          <p>화면을 터치하거나 드래그해서<br>겁먹은 찌먕이를 도망치게 도와주세요!</p>
+          <button id="startBtn">도망쳐!</button>
+        </div>
+      </div>
+
+      <div id="gameOverScreen" class="overlay hidden">
+        <div class="panel">
+          <h2>비둘기가 나한테 날아왔어요!</h2>
+          <p>몇 마리를 피했나요? <strong id="finalScore">0</strong>마리!</p>
+          <div class="gameover-buttons">
+            <button id="restartBtn">다시하기</button>
+            <button id="shareBtn" class="share-btn">자랑하기</button>
+          </div>
+        </div>
+      </div>
+
+      <img id="player" src="assets/player.png" alt="" draggable="false">
+    </section>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>

@@ -305,7 +305,7 @@ startBtn.addEventListener("click", startGame);
 restartBtn.addEventListener("click", startGame);
 
 shareBtn.addEventListener("click", () => {
-  const text = `비둘기 피하기에서 ${score}점을 기록했어요!`;
+  const text = `'그것'을 ${score}마리 피했어요! 대단한데?`;
   const shareUrl = window.location.href;
   const twitterUrl =
     "https://twitter.com/intent/tweet?text=" +
